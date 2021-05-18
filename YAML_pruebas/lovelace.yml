@@ -1,0 +1,64 @@
+  mode: yaml
+  resources:
+    - url: /hacsfiles/weather-card/weather-card.js
+      type: module
+    - url: /hacsfiles/pc-card/pc-card.js
+      type: module
+    - url: /local/custom_ui/circle-sensor-card.js
+      type: module
+    - url: /hacsfiles/lovelace-thermostat-card/main.js
+      type: module
+    - url: /hacsfiles/calendar-card/calendar-card.js
+      type: module
+    - url: /hacsfiles/button-card/button-card.js
+      type: module
+    - url: /hacsfiles/restriction-card/restriction-card.js
+      type: module
+    - url: https://unpkg.com/moment@2.22.2/moment.js
+      type: js
+    - url: /hacsfiles/lovelace-slider-entity-row/slider-entity-row.js
+      type: js
+    - url: /hacsfiles/mini-media-player/mini-media-player-bundle.js
+      type: module
+    - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+      type: module
+    - url: /hacsfiles/lovelace-gap-card/gap-card.js
+      type: module
+    - url: /hacsfiles/lovelace-layout-card/layout-card.js
+      type: module
+    - url: /local/custom_ui/card-modder.js
+      type: js
+    - url: /hacsfiles/lovelace-card-mod/card-mod.js
+      type: module
+    - url: /hacsfiles/firetv-card/firetv-card.js
+      type: module
+    - url: /hacsfiles/tv-card/tv-card.js
+      type: module
+    - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
+      type: module
+    - url: /hacsfiles/config-template-card/config-template-card.js
+      type: module
+    - url: /hacsfiles/secondaryinfo-entity-row/secondaryinfo-entity-row.js
+      type: module
+    - url: /hacsfiles/simple-thermostat/simple-thermostat.js
+      type: module
+    - url: /hacsfiles/lovelace-hass-aarlo/hass-aarlo.js
+      type: module
+    - url: /hacsfiles/list-card/list-card.js
+      type: js
+    - url: /hacsfiles/unused-card/unused-card.js
+      type: module
+    - url: /hacsfiles/lovelace-card-tools/card-tools.js
+      type: module
+    - url: /hacsfiles/lovelace-template-entity-row/template-entity-row.js
+      type: module
+    - url: /hacsfiles/harmony-card/harmony-card.js
+      type: module
+    - url: /hacsfiles/lovelace-multiple-entity-row/multiple-entity-row.js
+      type: module
+    - url: /hacsfiles/vertical-stack-in-card/vertical-stack-in-card.js
+      type: module
+    - url: /hacsfiles/banner-card/banner-card.js
+      type: module
+    - url: /hacsfiles/bar-card/bar-card.js
+      type: module
