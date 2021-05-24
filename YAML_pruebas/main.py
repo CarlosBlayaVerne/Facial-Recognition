@@ -1,21 +1,32 @@
 import yaml
+import os
+from urllib.request import urlopen
 
 
-def yaml_loader(filepath):
-
-    with open(filepath, "r") as file_descriptor:
-        data = yaml.loar(file_descriptor)
-    return data
+with open('lovelace.yml', "r") as file:
+    data = yaml.safe_load(file)
 
 
-def yaml_dumb(filepath, data):
+print("mode: ", data['mode'])
+print("resources: ")
 
-    with open(filepath, "w") as file_descriptor:
-        yaml.dumb(data, file_descriptor)
-    return data
+for direcciones in data['resources']:
+    print(" - url: ", direcciones['url'])
+    print(" - type: ", direcciones['type'])
+    print("\n")
+
+'''
+r = urlopen(data['resources'][7]['url']) #abrir url
+print(r.read())
+'''
+
+#r = open(data['resources'][6]['url']) #abrir directorio
 
 
 
-if __name__ == "__main__":
-    filepath = "lovelace.yaml"
-    data = yaml_loader(filepath)
+
+'''
+cwd = os.getcwd()
+
+print("Current working directory: {0}".format(cwd))
+'''
