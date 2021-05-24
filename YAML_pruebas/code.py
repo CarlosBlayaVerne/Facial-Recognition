@@ -2,18 +2,12 @@ import yaml
 import os
 from urllib.request import urlopen
 
-
+#abrimos el documento prueba.yml
 with open('prueba.yml', "r") as file:
     data = yaml.safe_load(file)
 
 
-#for pasos in data['steps']:
-#    print (pasos, '\n')
-
-
-aux=data['steps']
-
-
+#imprimimos los primeros objetos de la lista
 print('version', data['version'], '\n')
 print('stages: ')
 for etapas in data['stages']:
@@ -22,7 +16,32 @@ for etapas in data['stages']:
 print('\n\nsteps:\n')
 
 
+#creamos un indice para acumular todos los atributos que pueden haber en los objetos de 'steps'
+index_1 = []
+index_2 = []
+for pasos in data['steps']:
 
+    for atributo in aux[pasos]:
+        if atributo in index_2:
+            pass
+        else:
+            index_2.append(atributo)
+
+
+for pasos in data['steps']:
+    print(pasos, ':\n')
+
+    for atributos in index_2:
+        #recorremos toda la lista de los posibles valores de atributos y si existen en ese en concreto lo imprimimos
+        try:
+            if data['steps'][pasos][atributos]:
+                print('  -',atributos, ':', data['steps'][pasos][atributos])
+        except:
+            pass
+    print('\n\n')
+
+
+'''
 for pasos in data['steps']:
 
     print(pasos)
@@ -99,3 +118,6 @@ for pasos in data['steps']:
         pass
     print('\n')
 
+
+print (index_2)
+'''
